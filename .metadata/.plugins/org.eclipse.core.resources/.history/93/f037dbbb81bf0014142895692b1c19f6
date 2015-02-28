@@ -1,0 +1,5 @@
+package edu.umkc.chatsys1;
+
+public interface IChat1 {
+
+}
