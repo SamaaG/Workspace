@@ -90,7 +90,8 @@
             <types:description xsi:type="instance:Description">Tetris</types:description>
             <types:interface types:id="interfaceffa80105-d32f792b-1d11cd7f-5a100253" xsi:type="types:Interface">
                 <types:description xsi:type="instance:Description">[New Interface]</types:description>
-                <types:direction xsi:type="instance:Direction">none</types:direction>
+                <types:direction xsi:type="instance:Direction">in</types:direction>
+                <types:type xlink:href="#interfaceTypeffa80105-d11a79b7-633a4d70-7db1000e" xsi:type="instance:XMLLink" xlink:type="simple"/>
             </types:interface>
             
             <implementationext:implementation xsi:type="javaimplementation:JavaImplementation">
@@ -106,9 +107,19 @@
             <types:description xsi:type="instance:Description">BoaedPanel</types:description>
             <types:interface types:id="interfaceffa80105-d32fd342-04621312-5a100274" xsi:type="types:Interface">
                 <types:description xsi:type="instance:Description">[New Interface]</types:description>
-                <types:direction xsi:type="instance:Direction">none</types:direction>
+                <types:direction xsi:type="instance:Direction">out</types:direction>
+                <types:type xlink:href="#interfaceTypeffa80105-d11a79b7-633a4d70-7db1000e" xsi:type="instance:XMLLink" xlink:type="simple"/>
             </types:interface>
         </types:component>
+        <types:link types:id="linkffa80105-d3396eb0-734ad862-5a10027f" xsi:type="types:Link">
+            <types:description xsi:type="instance:Description">[New Link]</types:description>
+            <types:point xsi:type="instance:Point">
+                <instance:anchorOnInterface xlink:href="#interfaceffa80105-d32f792b-1d11cd7f-5a100253" xsi:type="instance:XMLLink" xlink:type="simple"/>
+            </types:point>
+            <types:point xsi:type="instance:Point">
+                <instance:anchorOnInterface xlink:href="#interfaceffa80105-d32fd342-04621312-5a100274" xsi:type="instance:XMLLink" xlink:type="simple"/>
+            </types:point>
+        </types:link>
         
         
     </types:archStructure>
@@ -161,6 +172,24 @@
                         <hints3:value hints3:data="255,255,255" hints3:type="org.eclipse.swt.graphics.RGB" xsi:type="hints3:PropertyValue"/>
                     </hints3:property>
                 </hints3:hintedElement>
+                <hints3:hintedElement xsi:type="hints3:HintedElement">
+                    <hints3:target xlink:href="#linkffa80105-d3396eb0-734ad862-5a10027f" xsi:type="instance:XMLLink" xlink:type="simple"/>
+                    <hints3:property hints3:name="glass/midpoints" xsi:type="hints3:Property">
+                        <hints3:value hints3:data="{}" hints3:type="{[Lorg.eclipse.swt.graphics.Point;,0}" xsi:type="hints3:PropertyValue"/>
+                    </hints3:property>
+                    <hints3:property hints3:name="glass/endpoint1" xsi:type="hints3:Property">
+                        <hints3:value hints3:data="10442,10275" hints3:type="org.eclipse.swt.graphics.Point" xsi:type="hints3:PropertyValue"/>
+                    </hints3:property>
+                    <hints3:property hints3:name="glass/endpoint2" xsi:type="hints3:Property">
+                        <hints3:value hints3:data="10670,10275" hints3:type="org.eclipse.swt.graphics.Point" xsi:type="hints3:PropertyValue"/>
+                    </hints3:property>
+                    <hints3:property hints3:name="glass/endpoint1-StuckInfo" xsi:type="hints3:Property">
+                        <hints3:value hints3:data="{EDGE_FROM_CENTER}" hints3:type="{[Ljava.lang.Object;,1,enum:edu.uci.isr.bna4.logics.coordinating.MaintainStickyPointLogic$StickyMode}" xsi:type="hints3:PropertyValue"/>
+                    </hints3:property>
+                    <hints3:property hints3:name="glass/endpoint2-StuckInfo" xsi:type="hints3:Property">
+                        <hints3:value hints3:data="{EDGE_FROM_CENTER}" hints3:type="{[Ljava.lang.Object;,1,enum:edu.uci.isr.bna4.logics.coordinating.MaintainStickyPointLogic$StickyMode}" xsi:type="hints3:PropertyValue"/>
+                    </hints3:property>
+                </hints3:hintedElement>
                 
                 
             </hints3:hintedElement>
@@ -195,6 +224,10 @@
                     <changes:interface xlink:href="#interfaceffa80105-d32fd342-04621312-5a100274" xsi:type="instance:XMLLink" xlink:type="simple"/>
                 </changes:interfaceChange>
             </changes:componentChange>
+            <changes:linkChange changes:id="linkChangeffa80105-d3396eb1-6a89ab62-5a100280" xsi:type="changes:LinkChange" changes:type="add">
+                <changes:description xsi:type="instance:Description">New Link</changes:description>
+                <changes:link xlink:href="#linkffa80105-d3396eb0-734ad862-5a10027f" xsi:type="instance:XMLLink" xlink:type="simple"/>
+            </changes:linkChange>
         </changes:changes>
         
         
