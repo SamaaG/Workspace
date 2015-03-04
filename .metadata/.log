@@ -1880,3 +1880,549 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-03-04 11:29:56.206 -----------------------------------------------
+eclipse.buildId=4.4.0.I20140606-1215
+java.version=1.8.0_31
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.standard.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.standard.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-03-04 11:30:15.014
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-03-04 11:30:15.018
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Samaa'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2015-03-04 11:40:04.623
+!MESSAGE Error setting focus to : org.eclipse.e4.ui.model.application.ui.basic.impl.PartImpl Tetris.java
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4441)
+	at org.eclipse.swt.SWT.error(SWT.java:4356)
+	at org.eclipse.swt.SWT.error(SWT.java:4327)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:476)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:348)
+	at org.eclipse.swt.widgets.Control.setFocus(Control.java:3320)
+	at org.eclipse.swt.widgets.Composite.setFocus(Composite.java:1039)
+	at org.eclipse.swt.widgets.Composite.setFocus(Composite.java:1039)
+	at org.eclipse.ui.texteditor.StatusTextEditor.setFocus(StatusTextEditor.java:120)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaEditor.setFocus(JavaEditor.java:2389)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.delegateSetFocus(CompatibilityPart.java:190)
+	at sun.reflect.GeneratedMethodAccessor92.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:247)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:253)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:225)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:107)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.focusGui(PartRenderingEngine.java:795)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer$2.setFocus(ContributedPartRenderer.java:100)
+	at org.eclipse.swt.custom.CTabItem.setFocus(CTabItem.java:332)
+	at org.eclipse.swt.custom.CTabFolder.setFocus(CTabFolder.java:2555)
+	at org.eclipse.swt.widgets.Control.fixFocus(Control.java:1052)
+	at org.eclipse.swt.widgets.Control.setVisible(Control.java:3818)
+	at org.eclipse.swt.custom.CTabFolder.setSelection(CTabFolder.java:3098)
+	at org.eclipse.swt.custom.CTabFolder.setSelection(CTabFolder.java:3106)
+	at org.eclipse.swt.custom.CTabFolder.onMouse(CTabFolder.java:1794)
+	at org.eclipse.swt.custom.CTabFolder$1.handleEvent(CTabFolder.java:283)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:382)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:236)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+!SESSION 2015-03-04 12:12:44.168 -----------------------------------------------
+eclipse.buildId=4.4.0.I20140606-1215
+java.version=1.8.0_31
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.standard.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.standard.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-03-04 12:13:04.088
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-03-04 12:13:04.092
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Samaa'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2015-03-04 12:16:43.040
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2015-03-04 12:16:43.040
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:16:43.040
+!MESSAGE Software being installed: ObjectAid Diagram Add-On (License Required) 1.1.8 (com.objectaid.uml.addon.feature.group 1.1.8)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:16:43.040
+!MESSAGE Software currently installed: Archstudio 4.1.5 (edu.uci.isr.archstudio4.feature.group 4.1.5)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-03-04 12:16:43.040
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:16:43.040
+!MESSAGE International Components for Unicode for Java (ICU4J) 4.2.1.v20100412 (com.ibm.icu 4.2.1.v20100412)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:16:43.040
+!MESSAGE International Components for Unicode for Java (ICU4J) 52.1.0.v201404241930 (com.ibm.icu 52.1.0.v201404241930)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-03-04 12:16:43.040
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:16:43.040
+!MESSAGE From: ObjectAid Diagram Add-On (License Required) 1.1.8 (com.objectaid.uml.addon.feature.group 1.1.8)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:16:43.041
+!MESSAGE To: org.eclipse.draw2d 3.6.0
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-03-04 12:16:43.041
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:16:43.041
+!MESSAGE From: ArchStudio 4 Plug-in 4.1.50.201303251439 (edu.uci.isr.archstudio4 4.1.50.201303251439)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:16:43.041
+!MESSAGE To: bundle org.eclipse.jdt.ui 3.6.1
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-03-04 12:16:43.041
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:16:43.041
+!MESSAGE From: Archstudio 4.1.5 (edu.uci.isr.archstudio4.feature.group 4.1.5)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:16:43.041
+!MESSAGE To: edu.uci.isr.archstudio4 [4.1.50.201303251439]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-03-04 12:16:43.041
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:16:43.041
+!MESSAGE From: Graphical Editing Framework Draw2d 3.6.0.v20100525-1225 (org.eclipse.draw2d 3.6.0.v20100525-1225)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:16:43.041
+!MESSAGE To: package com.ibm.icu.text [3.8.1,5.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-03-04 12:16:43.041
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:16:43.041
+!MESSAGE From: Java Development Tools UI 3.10.2.v20141014-1419 (org.eclipse.jdt.ui 3.10.2.v20141014-1419)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:16:43.041
+!MESSAGE To: bundle com.ibm.icu 4.4.2
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2015-03-04 12:16:43.063
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2015-03-04 12:16:43.063
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:16:43.063
+!MESSAGE Software being installed: ObjectAid Diagram Add-On (License Required) 1.1.8 (com.objectaid.uml.addon.feature.group 1.1.8)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:16:43.063
+!MESSAGE Software currently installed: Archstudio 4.1.5 (edu.uci.isr.archstudio4.feature.group 4.1.5)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-03-04 12:16:43.063
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:16:43.063
+!MESSAGE International Components for Unicode for Java (ICU4J) 4.2.1.v20100412 (com.ibm.icu 4.2.1.v20100412)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:16:43.063
+!MESSAGE International Components for Unicode for Java (ICU4J) 52.1.0.v201404241930 (com.ibm.icu 52.1.0.v201404241930)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-03-04 12:16:43.063
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:16:43.063
+!MESSAGE From: ObjectAid Diagram Add-On (License Required) 1.1.8 (com.objectaid.uml.addon.feature.group 1.1.8)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:16:43.063
+!MESSAGE To: org.eclipse.draw2d 3.6.0
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-03-04 12:16:43.063
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:16:43.063
+!MESSAGE From: ArchStudio 4 Plug-in 4.1.50.201303251439 (edu.uci.isr.archstudio4 4.1.50.201303251439)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:16:43.063
+!MESSAGE To: bundle org.eclipse.jdt.ui 3.6.1
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-03-04 12:16:43.063
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:16:43.063
+!MESSAGE From: Archstudio 4.1.5 (edu.uci.isr.archstudio4.feature.group 4.1.5)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:16:43.063
+!MESSAGE To: edu.uci.isr.archstudio4 [4.1.50.201303251439]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-03-04 12:16:43.063
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:16:43.064
+!MESSAGE From: Graphical Editing Framework Draw2d 3.6.0.v20100525-1225 (org.eclipse.draw2d 3.6.0.v20100525-1225)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:16:43.064
+!MESSAGE To: package com.ibm.icu.text [3.8.1,5.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-03-04 12:16:43.064
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:16:43.064
+!MESSAGE From: Java Development Tools UI 3.10.2.v20141014-1419 (org.eclipse.jdt.ui 3.10.2.v20141014-1419)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:16:43.064
+!MESSAGE To: bundle com.ibm.icu 4.4.2
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2015-03-04 12:16:43.092
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2015-03-04 12:16:43.092
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:16:43.092
+!MESSAGE Software being installed: ObjectAid Diagram Add-On (License Required) 1.1.8 (com.objectaid.uml.addon.feature.group 1.1.8)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:16:43.092
+!MESSAGE Software currently installed: Archstudio 4.1.5 (edu.uci.isr.archstudio4.feature.group 4.1.5)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-03-04 12:16:43.093
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:16:43.093
+!MESSAGE International Components for Unicode for Java (ICU4J) 4.2.1.v20100412 (com.ibm.icu 4.2.1.v20100412)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:16:43.093
+!MESSAGE International Components for Unicode for Java (ICU4J) 52.1.0.v201404241930 (com.ibm.icu 52.1.0.v201404241930)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-03-04 12:16:43.093
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:16:43.093
+!MESSAGE From: ObjectAid Diagram Add-On (License Required) 1.1.8 (com.objectaid.uml.addon.feature.group 1.1.8)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:16:43.093
+!MESSAGE To: org.eclipse.draw2d 3.6.0
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-03-04 12:16:43.093
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:16:43.093
+!MESSAGE From: ArchStudio 4 Plug-in 4.1.50.201303251439 (edu.uci.isr.archstudio4 4.1.50.201303251439)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:16:43.093
+!MESSAGE To: bundle org.eclipse.jdt.ui 3.6.1
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-03-04 12:16:43.093
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:16:43.093
+!MESSAGE From: Archstudio 4.1.5 (edu.uci.isr.archstudio4.feature.group 4.1.5)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:16:43.093
+!MESSAGE To: edu.uci.isr.archstudio4 [4.1.50.201303251439]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-03-04 12:16:43.093
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:16:43.093
+!MESSAGE From: Graphical Editing Framework Draw2d 3.6.0.v20100525-1225 (org.eclipse.draw2d 3.6.0.v20100525-1225)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:16:43.093
+!MESSAGE To: package com.ibm.icu.text [3.8.1,5.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-03-04 12:16:43.093
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:16:43.093
+!MESSAGE From: Java Development Tools UI 3.10.2.v20141014-1419 (org.eclipse.jdt.ui 3.10.2.v20141014-1419)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:16:43.093
+!MESSAGE To: bundle com.ibm.icu 4.4.2
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2015-03-04 12:16:43.099
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2015-03-04 12:16:43.099
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:16:43.099
+!MESSAGE Software being installed: ObjectAid Diagram Add-On (License Required) 1.1.8 (com.objectaid.uml.addon.feature.group 1.1.8)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:16:43.099
+!MESSAGE Software currently installed: Archstudio 4.1.5 (edu.uci.isr.archstudio4.feature.group 4.1.5)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-03-04 12:16:43.099
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:16:43.099
+!MESSAGE International Components for Unicode for Java (ICU4J) 4.2.1.v20100412 (com.ibm.icu 4.2.1.v20100412)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:16:43.099
+!MESSAGE International Components for Unicode for Java (ICU4J) 52.1.0.v201404241930 (com.ibm.icu 52.1.0.v201404241930)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-03-04 12:16:43.100
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:16:43.100
+!MESSAGE From: ObjectAid Diagram Add-On (License Required) 1.1.8 (com.objectaid.uml.addon.feature.group 1.1.8)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:16:43.100
+!MESSAGE To: org.eclipse.draw2d 3.6.0
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-03-04 12:16:43.100
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:16:43.100
+!MESSAGE From: ArchStudio 4 Plug-in 4.1.50.201303251439 (edu.uci.isr.archstudio4 4.1.50.201303251439)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:16:43.100
+!MESSAGE To: bundle org.eclipse.jdt.ui 3.6.1
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-03-04 12:16:43.100
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:16:43.100
+!MESSAGE From: Archstudio 4.1.5 (edu.uci.isr.archstudio4.feature.group 4.1.5)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:16:43.100
+!MESSAGE To: edu.uci.isr.archstudio4 [4.1.50.201303251439]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-03-04 12:16:43.100
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:16:43.100
+!MESSAGE From: Graphical Editing Framework Draw2d 3.6.0.v20100525-1225 (org.eclipse.draw2d 3.6.0.v20100525-1225)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:16:43.100
+!MESSAGE To: package com.ibm.icu.text [3.8.1,5.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-03-04 12:16:43.100
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:16:43.100
+!MESSAGE From: Java Development Tools UI 3.10.2.v20141014-1419 (org.eclipse.jdt.ui 3.10.2.v20141014-1419)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:16:43.100
+!MESSAGE To: bundle com.ibm.icu 4.4.2
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2015-03-04 12:17:49.049
+!MESSAGE An error occurred while collecting items to be installed
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2015-03-04 12:17:49.049
+!MESSAGE session context was:(profile=epp.package.standard, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2015-03-04 12:17:49.049
+!MESSAGE Unable to read repository at http://www.objectaid.net/update/plugins/com.objectaid.uml.seq_1.1.8.jar.
+!STACK 0
+org.apache.http.ConnectionClosedException: Premature end of Content-Length delimited message body (expected: 1074905; received: 518009
+	at org.apache.http.impl.io.ContentLengthInputStream.read(ContentLengthInputStream.java:184)
+	at org.apache.http.conn.EofSensorInputStream.read(EofSensorInputStream.java:138)
+	at java.io.FilterInputStream.read(Unknown Source)
+	at java.io.FilterInputStream.read(Unknown Source)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer$1.performFileTransfer(AbstractRetrieveFileTransfer.java:178)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:73)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SESSION 2015-03-04 12:19:23.904 -----------------------------------------------
+eclipse.buildId=4.4.0.I20140606-1215
+java.version=1.8.0_31
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.standard.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.standard.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-03-04 12:19:44.107
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-03-04 12:19:44.112
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Samaa'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-03-04 12:32:12.117 -----------------------------------------------
+eclipse.buildId=4.4.0.I20140606-1215
+java.version=1.8.0_31
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.standard.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.standard.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-03-04 12:32:31.597
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-03-04 12:32:31.600
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Samaa'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2015-03-04 12:34:08.976
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2015-03-04 12:34:08.976
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:34:08.976
+!MESSAGE Software being installed: ObjectAid Class Diagram 1.1.8 (com.objectaid.uml.cls.feature.group 1.1.8)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:34:08.976
+!MESSAGE Software currently installed: Archstudio 4.1.5 (edu.uci.isr.archstudio4.feature.group 4.1.5)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-03-04 12:34:08.976
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:34:08.976
+!MESSAGE International Components for Unicode for Java (ICU4J) 4.2.1.v20100412 (com.ibm.icu 4.2.1.v20100412)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:34:08.977
+!MESSAGE International Components for Unicode for Java (ICU4J) 52.1.0.v201404241930 (com.ibm.icu 52.1.0.v201404241930)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-03-04 12:34:08.977
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:34:08.977
+!MESSAGE From: ObjectAid Class Diagram 1.1.8 (com.objectaid.uml.cls.feature.group 1.1.8)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:34:08.977
+!MESSAGE To: org.eclipse.draw2d 3.6.0
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-03-04 12:34:08.977
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:34:08.977
+!MESSAGE From: ArchStudio 4 Plug-in 4.1.50.201303251439 (edu.uci.isr.archstudio4 4.1.50.201303251439)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:34:08.977
+!MESSAGE To: bundle org.eclipse.jdt.ui 3.6.1
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-03-04 12:34:08.977
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:34:08.977
+!MESSAGE From: Archstudio 4.1.5 (edu.uci.isr.archstudio4.feature.group 4.1.5)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:34:08.977
+!MESSAGE To: edu.uci.isr.archstudio4 [4.1.50.201303251439]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-03-04 12:34:08.977
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:34:08.977
+!MESSAGE From: Graphical Editing Framework Draw2d 3.6.0.v20100525-1225 (org.eclipse.draw2d 3.6.0.v20100525-1225)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:34:08.977
+!MESSAGE To: package com.ibm.icu.text [3.8.1,5.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-03-04 12:34:08.977
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:34:08.977
+!MESSAGE From: Java Development Tools UI 3.10.2.v20141014-1419 (org.eclipse.jdt.ui 3.10.2.v20141014-1419)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:34:08.977
+!MESSAGE To: bundle com.ibm.icu 4.4.2
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2015-03-04 12:34:08.990
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2015-03-04 12:34:08.990
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:34:08.990
+!MESSAGE Software being installed: ObjectAid Class Diagram 1.1.8 (com.objectaid.uml.cls.feature.group 1.1.8)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:34:08.990
+!MESSAGE Software currently installed: Archstudio 4.1.5 (edu.uci.isr.archstudio4.feature.group 4.1.5)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-03-04 12:34:08.990
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:34:08.990
+!MESSAGE International Components for Unicode for Java (ICU4J) 4.2.1.v20100412 (com.ibm.icu 4.2.1.v20100412)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:34:08.990
+!MESSAGE International Components for Unicode for Java (ICU4J) 52.1.0.v201404241930 (com.ibm.icu 52.1.0.v201404241930)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-03-04 12:34:08.990
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:34:08.990
+!MESSAGE From: ObjectAid Class Diagram 1.1.8 (com.objectaid.uml.cls.feature.group 1.1.8)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:34:08.990
+!MESSAGE To: org.eclipse.draw2d 3.6.0
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-03-04 12:34:08.990
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:34:08.990
+!MESSAGE From: ArchStudio 4 Plug-in 4.1.50.201303251439 (edu.uci.isr.archstudio4 4.1.50.201303251439)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:34:08.990
+!MESSAGE To: bundle org.eclipse.jdt.ui 3.6.1
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-03-04 12:34:08.990
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:34:08.990
+!MESSAGE From: Archstudio 4.1.5 (edu.uci.isr.archstudio4.feature.group 4.1.5)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:34:08.990
+!MESSAGE To: edu.uci.isr.archstudio4 [4.1.50.201303251439]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-03-04 12:34:08.990
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:34:08.990
+!MESSAGE From: Graphical Editing Framework Draw2d 3.6.0.v20100525-1225 (org.eclipse.draw2d 3.6.0.v20100525-1225)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:34:08.990
+!MESSAGE To: package com.ibm.icu.text [3.8.1,5.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-03-04 12:34:08.990
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:34:08.990
+!MESSAGE From: Java Development Tools UI 3.10.2.v20141014-1419 (org.eclipse.jdt.ui 3.10.2.v20141014-1419)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:34:08.990
+!MESSAGE To: bundle com.ibm.icu 4.4.2
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2015-03-04 12:34:09.003
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2015-03-04 12:34:09.003
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:34:09.003
+!MESSAGE Software being installed: ObjectAid Class Diagram 1.1.8 (com.objectaid.uml.cls.feature.group 1.1.8)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:34:09.003
+!MESSAGE Software currently installed: Archstudio 4.1.5 (edu.uci.isr.archstudio4.feature.group 4.1.5)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-03-04 12:34:09.003
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:34:09.003
+!MESSAGE International Components for Unicode for Java (ICU4J) 4.2.1.v20100412 (com.ibm.icu 4.2.1.v20100412)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:34:09.003
+!MESSAGE International Components for Unicode for Java (ICU4J) 52.1.0.v201404241930 (com.ibm.icu 52.1.0.v201404241930)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-03-04 12:34:09.003
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:34:09.003
+!MESSAGE From: ObjectAid Class Diagram 1.1.8 (com.objectaid.uml.cls.feature.group 1.1.8)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:34:09.003
+!MESSAGE To: org.eclipse.draw2d 3.6.0
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-03-04 12:34:09.003
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:34:09.003
+!MESSAGE From: ArchStudio 4 Plug-in 4.1.50.201303251439 (edu.uci.isr.archstudio4 4.1.50.201303251439)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:34:09.003
+!MESSAGE To: bundle org.eclipse.jdt.ui 3.6.1
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-03-04 12:34:09.003
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:34:09.003
+!MESSAGE From: Archstudio 4.1.5 (edu.uci.isr.archstudio4.feature.group 4.1.5)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:34:09.003
+!MESSAGE To: edu.uci.isr.archstudio4 [4.1.50.201303251439]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-03-04 12:34:09.003
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:34:09.003
+!MESSAGE From: Graphical Editing Framework Draw2d 3.6.0.v20100525-1225 (org.eclipse.draw2d 3.6.0.v20100525-1225)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:34:09.003
+!MESSAGE To: package com.ibm.icu.text [3.8.1,5.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-03-04 12:34:09.003
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:34:09.003
+!MESSAGE From: Java Development Tools UI 3.10.2.v20141014-1419 (org.eclipse.jdt.ui 3.10.2.v20141014-1419)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:34:09.003
+!MESSAGE To: bundle com.ibm.icu 4.4.2
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2015-03-04 12:34:09.006
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2015-03-04 12:34:09.006
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:34:09.006
+!MESSAGE Software being installed: ObjectAid Class Diagram 1.1.8 (com.objectaid.uml.cls.feature.group 1.1.8)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:34:09.006
+!MESSAGE Software currently installed: Archstudio 4.1.5 (edu.uci.isr.archstudio4.feature.group 4.1.5)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-03-04 12:34:09.006
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:34:09.006
+!MESSAGE International Components for Unicode for Java (ICU4J) 4.2.1.v20100412 (com.ibm.icu 4.2.1.v20100412)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:34:09.006
+!MESSAGE International Components for Unicode for Java (ICU4J) 52.1.0.v201404241930 (com.ibm.icu 52.1.0.v201404241930)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-03-04 12:34:09.006
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:34:09.006
+!MESSAGE From: ObjectAid Class Diagram 1.1.8 (com.objectaid.uml.cls.feature.group 1.1.8)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:34:09.006
+!MESSAGE To: org.eclipse.draw2d 3.6.0
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-03-04 12:34:09.006
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:34:09.006
+!MESSAGE From: ArchStudio 4 Plug-in 4.1.50.201303251439 (edu.uci.isr.archstudio4 4.1.50.201303251439)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:34:09.006
+!MESSAGE To: bundle org.eclipse.jdt.ui 3.6.1
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-03-04 12:34:09.006
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:34:09.006
+!MESSAGE From: Archstudio 4.1.5 (edu.uci.isr.archstudio4.feature.group 4.1.5)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:34:09.006
+!MESSAGE To: edu.uci.isr.archstudio4 [4.1.50.201303251439]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-03-04 12:34:09.006
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:34:09.006
+!MESSAGE From: Graphical Editing Framework Draw2d 3.6.0.v20100525-1225 (org.eclipse.draw2d 3.6.0.v20100525-1225)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:34:09.006
+!MESSAGE To: package com.ibm.icu.text [3.8.1,5.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2015-03-04 12:34:09.006
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:34:09.006
+!MESSAGE From: Java Development Tools UI 3.10.2.v20141014-1419 (org.eclipse.jdt.ui 3.10.2.v20141014-1419)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2015-03-04 12:34:09.006
+!MESSAGE To: bundle com.ibm.icu 4.4.2
+!SESSION 2015-03-04 12:34:56.766 -----------------------------------------------
+eclipse.buildId=4.4.0.I20140606-1215
+java.version=1.8.0_31
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.standard.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.standard.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-03-04 12:35:17.446
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-03-04 12:35:17.450
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Samaa'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
