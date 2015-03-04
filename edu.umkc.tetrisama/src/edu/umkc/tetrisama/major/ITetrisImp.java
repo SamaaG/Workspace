@@ -1,6 +1,7 @@
 package edu.umkc.tetrisama.major;
 
 
+import edu.umkc.tetrisama.TileType;
 import edu.umkc.tetrisama.major.TetrisArch;
 
 public interface ITetrisImp 
@@ -24,4 +25,13 @@ public interface ITetrisImp
 	/*
   	  Implementation primitives required by the architecture
 	*/
+  
+    
+    public boolean isPaused ()  ;        
+    public boolean isNewGame ()  ;        
+    public boolean isGameOver ()  ;        
+    public TileType getPieceType ()  ;        
+    public int getPieceCol ()  ;        
+    public int getPieceRow ()  ;        
+    public int getPieceRotation ()  ;        
 }

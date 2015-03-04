@@ -91,7 +91,7 @@
             <types:interface types:id="interfaceffa80105-d32f792b-1d11cd7f-5a100253" xsi:type="types:Interface">
                 <types:description xsi:type="instance:Description">[New Interface]</types:description>
                 <types:direction xsi:type="instance:Direction">in</types:direction>
-                <types:type xlink:href="#interfaceTypeffa80105-d11a79b7-633a4d70-7db1000e" xsi:type="instance:XMLLink" xlink:type="simple"/>
+                <types:type xlink:href="#interfaceTypeffa80105-d11a79b7-633a4d70-7db1000e" xlink:type="simple" xsi:type="instance:XMLLink"/>
             </types:interface>
             
             <implementationext:implementation xsi:type="javaimplementation:JavaImplementation">
@@ -103,21 +103,31 @@
                 </javaimplementation:auxClass>
             </implementationext:implementation>
         </types:component>
-        <types:component types:id="componentffa80105-d31cc575-49c610ac-5a1001e2" xsi:type="types:Component">
-            <types:description xsi:type="instance:Description">BoaedPanel</types:description>
+        <types:component types:id="componentffa80105-d31cc575-49c610ac-5a1001e2" xsi:type="implementationext:ComponentImpl">
+            <types:description xsi:type="instance:Description">BoardPanel</types:description>
             <types:interface types:id="interfaceffa80105-d32fd342-04621312-5a100274" xsi:type="types:Interface">
                 <types:description xsi:type="instance:Description">[New Interface]</types:description>
                 <types:direction xsi:type="instance:Direction">out</types:direction>
-                <types:type xlink:href="#interfaceTypeffa80105-d11a79b7-633a4d70-7db1000e" xsi:type="instance:XMLLink" xlink:type="simple"/>
+                <types:type xlink:href="#interfaceTypeffa80105-d11a79b7-633a4d70-7db1000e" xlink:type="simple" xsi:type="instance:XMLLink"/>
             </types:interface>
+            <implementationext:implementation xsi:type="javaimplementation:JavaImplementation">
+                <javaimplementation:mainClass xsi:type="javaimplementation:JavaClassFile">
+                    <javaimplementation:javaClassName xsi:type="javaimplementation:JavaClassName">edu.umkc.tetrisama.majorB.BoardPanelArch</javaimplementation:javaClassName>
+                </javaimplementation:mainClass>
+                <javaimplementation:auxClass xsi:type="javaimplementation:JavaClassFile">
+                    <javaimplementation:javaClassName xsi:type="javaimplementation:JavaClassName">edu.umkc.tetrisama.majorB.BoardPanelImp</javaimplementation:javaClassName>
+                </javaimplementation:auxClass>
+            </implementationext:implementation>
+            
+            
         </types:component>
         <types:link types:id="linkffa80105-d3396eb0-734ad862-5a10027f" xsi:type="types:Link">
             <types:description xsi:type="instance:Description">[New Link]</types:description>
             <types:point xsi:type="instance:Point">
-                <instance:anchorOnInterface xlink:href="#interfaceffa80105-d32f792b-1d11cd7f-5a100253" xsi:type="instance:XMLLink" xlink:type="simple"/>
+                <instance:anchorOnInterface xlink:href="#interfaceffa80105-d32f792b-1d11cd7f-5a100253" xlink:type="simple" xsi:type="instance:XMLLink"/>
             </types:point>
             <types:point xsi:type="instance:Point">
-                <instance:anchorOnInterface xlink:href="#interfaceffa80105-d32fd342-04621312-5a100274" xsi:type="instance:XMLLink" xlink:type="simple"/>
+                <instance:anchorOnInterface xlink:href="#interfaceffa80105-d32fd342-04621312-5a100274" xlink:type="simple" xsi:type="instance:XMLLink"/>
             </types:point>
         </types:link>
         
@@ -140,7 +150,7 @@
                     
                 </hints3:hintedElement>
                 <hints3:hintedElement xsi:type="hints3:HintedElement">
-                    <hints3:target xlink:href="#componentffa80105-d31cc575-49c610ac-5a1001e2" xsi:type="instance:XMLLink" xlink:type="simple"/>
+                    <hints3:target xlink:href="#componentffa80105-d31cc575-49c610ac-5a1001e2" xlink:type="simple" xsi:type="instance:XMLLink"/>
                     <hints3:property hints3:name="glass/boundingBox" xsi:type="hints3:Property">
                         <hints3:value hints3:data="10675,10250,250,75" hints3:type="org.eclipse.swt.graphics.Rectangle" xsi:type="hints3:PropertyValue"/>
                     </hints3:property>
@@ -149,7 +159,7 @@
                     </hints3:property>
                 </hints3:hintedElement>
                 <hints3:hintedElement xsi:type="hints3:HintedElement">
-                    <hints3:target xlink:href="#interfaceffa80105-d32f792b-1d11cd7f-5a100253" xsi:type="instance:XMLLink" xlink:type="simple"/>
+                    <hints3:target xlink:href="#interfaceffa80105-d32f792b-1d11cd7f-5a100253" xlink:type="simple" xsi:type="instance:XMLLink"/>
                     <hints3:property hints3:name="glass/anchorPoint" xsi:type="hints3:Property">
                         <hints3:value hints3:data="10437,10275" hints3:type="org.eclipse.swt.graphics.Point" xsi:type="hints3:PropertyValue"/>
                     </hints3:property>
@@ -161,7 +171,7 @@
                     </hints3:property>
                 </hints3:hintedElement>
                 <hints3:hintedElement xsi:type="hints3:HintedElement">
-                    <hints3:target xlink:href="#interfaceffa80105-d32fd342-04621312-5a100274" xsi:type="instance:XMLLink" xlink:type="simple"/>
+                    <hints3:target xlink:href="#interfaceffa80105-d32fd342-04621312-5a100274" xlink:type="simple" xsi:type="instance:XMLLink"/>
                     <hints3:property hints3:name="glass/anchorPoint" xsi:type="hints3:Property">
                         <hints3:value hints3:data="10675,10275" hints3:type="org.eclipse.swt.graphics.Point" xsi:type="hints3:PropertyValue"/>
                     </hints3:property>
@@ -173,7 +183,7 @@
                     </hints3:property>
                 </hints3:hintedElement>
                 <hints3:hintedElement xsi:type="hints3:HintedElement">
-                    <hints3:target xlink:href="#linkffa80105-d3396eb0-734ad862-5a10027f" xsi:type="instance:XMLLink" xlink:type="simple"/>
+                    <hints3:target xlink:href="#linkffa80105-d3396eb0-734ad862-5a10027f" xlink:type="simple" xsi:type="instance:XMLLink"/>
                     <hints3:property hints3:name="glass/midpoints" xsi:type="hints3:Property">
                         <hints3:value hints3:data="{}" hints3:type="{[Lorg.eclipse.swt.graphics.Point;,0}" xsi:type="hints3:PropertyValue"/>
                     </hints3:property>
@@ -204,29 +214,29 @@
                 <changes:component xlink:href="#componentffa80105-d30e6248-e240f51d-5a100147" xlink:type="simple" xsi:type="instance:XMLLink"/>
             </changes:componentChange>
         </changes:changes>
-        <changes:changes changes:id="changesffa80105-d31cc578-58bf1606-5a1001e3" changes:status="unmapped" xsi:type="changes:Changes">
+        <changes:changes changes:id="changesffa80105-d31cc578-58bf1606-5a1001e3" changes:status="mapped" xsi:type="changes:Changes">
             <changes:description xsi:type="instance:Description">2015-02-28 20:14</changes:description>
-            <changes:componentChange changes:id="componentChangeffa80105-d31cc57f-688b5def-5a1001ec" xsi:type="changes:ComponentChange" changes:type="add">
+            <changes:componentChange changes:id="componentChangeffa80105-d31cc57f-688b5def-5a1001ec" changes:type="add" xsi:type="changes:ComponentChange">
                 <changes:description xsi:type="instance:Description">New Component</changes:description>
-                <changes:component xlink:href="#componentffa80105-d31cc575-49c610ac-5a1001e2" xsi:type="instance:XMLLink" xlink:type="simple"/>
+                <changes:component xlink:href="#componentffa80105-d31cc575-49c610ac-5a1001e2" xlink:type="simple" xsi:type="instance:XMLLink"/>
             </changes:componentChange>
-            <changes:componentChange changes:id="componentChangeffa80105-d32f792e-040e0088-5a100254" xsi:type="changes:ComponentChange" changes:type="update">
+            <changes:componentChange changes:id="componentChangeffa80105-d32f792e-040e0088-5a100254" changes:type="update" xsi:type="changes:ComponentChange">
                 <changes:description xsi:type="instance:Description">New interface</changes:description>
-                <changes:component xlink:href="#componentffa80105-d30e6248-e240f51d-5a100147" xsi:type="instance:XMLLink" xlink:type="simple"/>
-                <changes:interfaceChange changes:id="interfaceChangeffa80105-d32f7930-64043ae5-5a10025a" xsi:type="changes:InterfaceChange" changes:type="add">
-                    <changes:interface xlink:href="#interfaceffa80105-d32f792b-1d11cd7f-5a100253" xsi:type="instance:XMLLink" xlink:type="simple"/>
+                <changes:component xlink:href="#componentffa80105-d30e6248-e240f51d-5a100147" xlink:type="simple" xsi:type="instance:XMLLink"/>
+                <changes:interfaceChange changes:id="interfaceChangeffa80105-d32f7930-64043ae5-5a10025a" changes:type="add" xsi:type="changes:InterfaceChange">
+                    <changes:interface xlink:href="#interfaceffa80105-d32f792b-1d11cd7f-5a100253" xlink:type="simple" xsi:type="instance:XMLLink"/>
                 </changes:interfaceChange>
             </changes:componentChange>
-            <changes:componentChange changes:id="componentChangeffa80105-d32fd343-1837e1e5-5a100275" xsi:type="changes:ComponentChange" changes:type="update">
+            <changes:componentChange changes:id="componentChangeffa80105-d32fd343-1837e1e5-5a100275" changes:type="update" xsi:type="changes:ComponentChange">
                 <changes:description xsi:type="instance:Description">New interface</changes:description>
-                <changes:component xlink:href="#componentffa80105-d31cc575-49c610ac-5a1001e2" xsi:type="instance:XMLLink" xlink:type="simple"/>
-                <changes:interfaceChange changes:id="interfaceChangeffa80105-d32fd345-5ca3047e-5a100279" xsi:type="changes:InterfaceChange" changes:type="add">
-                    <changes:interface xlink:href="#interfaceffa80105-d32fd342-04621312-5a100274" xsi:type="instance:XMLLink" xlink:type="simple"/>
+                <changes:component xlink:href="#componentffa80105-d31cc575-49c610ac-5a1001e2" xlink:type="simple" xsi:type="instance:XMLLink"/>
+                <changes:interfaceChange changes:id="interfaceChangeffa80105-d32fd345-5ca3047e-5a100279" changes:type="add" xsi:type="changes:InterfaceChange">
+                    <changes:interface xlink:href="#interfaceffa80105-d32fd342-04621312-5a100274" xlink:type="simple" xsi:type="instance:XMLLink"/>
                 </changes:interfaceChange>
             </changes:componentChange>
-            <changes:linkChange changes:id="linkChangeffa80105-d3396eb1-6a89ab62-5a100280" xsi:type="changes:LinkChange" changes:type="add">
+            <changes:linkChange changes:id="linkChangeffa80105-d3396eb1-6a89ab62-5a100280" changes:type="add" xsi:type="changes:LinkChange">
                 <changes:description xsi:type="instance:Description">New Link</changes:description>
-                <changes:link xlink:href="#linkffa80105-d3396eb0-734ad862-5a10027f" xsi:type="instance:XMLLink" xlink:type="simple"/>
+                <changes:link xlink:href="#linkffa80105-d3396eb0-734ad862-5a10027f" xlink:type="simple" xsi:type="instance:XMLLink"/>
             </changes:linkChange>
         </changes:changes>
         

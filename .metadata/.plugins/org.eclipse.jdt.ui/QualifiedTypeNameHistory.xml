@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="edu.umkc.tetrisama.TileType"/>
+<fullyQualifiedTypeName name="edu.umkc.tetrisama.ITetris"/>
+<fullyQualifiedTypeName name="edu.umkc.tetrisama.major.ITetrisImp"/>
+</qualifiedTypeNameHistroy>
