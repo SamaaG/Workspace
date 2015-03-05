@@ -1,4 +1,4 @@
-package edu.umkc.smt.tetrisplugin.clock;
+package edu.umkc.smt.tetrisplugin.tetris;
 
 
 import edu.uci.isr.myx.fw.AbstractMyxSimpleBrick;
@@ -7,14 +7,14 @@ import edu.uci.isr.myx.fw.MyxUtils;
 
 import edu.umkc.smt.tetrisplugin.IClock;
 
-public class ClockArch extends AbstractMyxSimpleBrick implements IClock
+public class TetrisArch extends AbstractMyxSimpleBrick implements IClock
 {
     public static final IMyxName msg_IClock = MyxUtils.createName("edu.umkc.smt.tetrisplugin.IClock");
 
 
-	private IClockImp _imp;
+	private ITetrisImp _imp;
 
-    public ClockArch (){
+    public TetrisArch (){
 		_imp = getImplementation();
 		if (_imp != null){
 			_imp.setArch(this);
@@ -23,9 +23,9 @@ public class ClockArch extends AbstractMyxSimpleBrick implements IClock
 		}
 	}
     
-    protected IClockImp getImplementation(){
+    protected ITetrisImp getImplementation(){
         try{
-			return new ClockImp();    
+			return new TetrisImp();    
         } catch (Exception e){
             System.err.println(e.getMessage());
             return null;

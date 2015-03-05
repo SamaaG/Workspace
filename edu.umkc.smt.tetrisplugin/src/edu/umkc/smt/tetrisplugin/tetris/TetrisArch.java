@@ -7,10 +7,11 @@ import edu.uci.isr.myx.fw.MyxUtils;
 
 import edu.umkc.smt.tetrisplugin.IClock;
 
-public class TetrisArch extends AbstractMyxSimpleBrick implements IClock
+public class TetrisArch extends AbstractMyxSimpleBrick
 {
     public static final IMyxName msg_IClock = MyxUtils.createName("edu.umkc.smt.tetrisplugin.IClock");
 
+    public IClock OUT_IClock;
 
 	private ITetrisImp _imp;
 
@@ -37,6 +38,11 @@ public class TetrisArch extends AbstractMyxSimpleBrick implements IClock
     }
     
     public void begin(){
+        OUT_IClock = (IClock) MyxUtils.getFirstRequiredServiceObject(this,msg_IClock);
+        if (OUT_IClock == null){
+ 			System.err.println("Error: Interface edu.umkc.smt.tetrisplugin.IClock returned null");
+			return;       
+        }
         _imp.begin();
     }
     
@@ -49,29 +55,6 @@ public class TetrisArch extends AbstractMyxSimpleBrick implements IClock
     }
     
 	public Object getServiceObject(IMyxName arg0) {
-		if (arg0.equals(msg_IClock)){
-			return this;
-		}        
 		return null;
 	}
-  
-    
-    public void Clock (float cyclesPerSecond)   {
-		_imp.Clock(cyclesPerSecond);
-    }    
-    public void setCyclesPerSecond (float cyclesPerSecond)   {
-		_imp.setCyclesPerSecond(cyclesPerSecond);
-    }    
-    public void reset ()   {
-		_imp.reset();
-    }    
-    public void update ()   {
-		_imp.update();
-    }    
-    public void setPaused (boolean paused)   {
-		_imp.setPaused(paused);
-    }    
-    public boolean hasElapsedCycle ()   {
-		return _imp.hasElapsedCycle();
-    }    
 }

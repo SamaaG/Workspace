@@ -1,16 +1,16 @@
-package edu.umkc.smt.tetrisplugin.tetris;
+package edu.umkc.smt.tetrisplugin.clock;
 
 
-import edu.umkc.smt.tetrisplugin.tetris.TetrisArch;
+import edu.umkc.smt.tetrisplugin.clock.ClockArch;
 
-public interface ITetrisImp 
+public interface IClockImp 
 {
 
 	/*
 	  Getter and Setter of architecture reference
 	*/
-    public void setArch (TetrisArch arch);
-	public TetrisArch getArch();
+    public void setArch (ClockArch arch);
+	public ClockArch getArch();
 	
 	/*
   	  Myx Lifecycle Methods: these methods are called automatically by the framework

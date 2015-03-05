@@ -89,7 +89,7 @@
             <types:description xsi:type="instance:Description">Tetris</types:description>
             <types:interface types:id="interfaceffffffe3-eb00f45a-07ee0037-d9ff0074" xsi:type="types:Interface">
                 <types:description xsi:type="instance:Description">[New Interface]</types:description>
-                <types:direction xsi:type="instance:Direction">in</types:direction>
+                <types:direction xsi:type="instance:Direction">out</types:direction>
                 <types:type xlink:href="#interfaceTypeffffffe3-eaf41624-ff88ff72-d9ff000c" xsi:type="instance:XMLLink" xlink:type="simple"/>
             </types:interface>
             <implementationext:implementation xsi:type="javaimplementation:JavaImplementation">
@@ -105,7 +105,7 @@
             <types:description xsi:type="instance:Description">Clock</types:description>
             <types:interface types:id="interfaceffffffe3-eb00fd97-cf063858-d9ff0095" xsi:type="types:Interface">
                 <types:description xsi:type="instance:Description">[New Interface]</types:description>
-                <types:direction xsi:type="instance:Direction">out</types:direction>
+                <types:direction xsi:type="instance:Direction">in</types:direction>
                 <types:type xlink:href="#interfaceTypeffffffe3-eaf41624-ff88ff72-d9ff000c" xsi:type="instance:XMLLink" xlink:type="simple"/>
             </types:interface>
             <implementationext:implementation xsi:type="javaimplementation:JavaImplementation">
