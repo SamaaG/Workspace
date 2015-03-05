@@ -1,2 +1,227 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<instance:xArch xmlns:instance="http://www.ics.uci.edu/pub/arch/xArch/instance.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ics.uci.edu/pub/arch/xArch/changesets.xsd http://www.isr.uci.edu/projects/xarchuci/ext/changesets.xsd"/>
+<instance:xArch xmlns:instance="http://www.ics.uci.edu/pub/arch/xArch/instance.xsd" xmlns:changes="http://www.ics.uci.edu/pub/arch/xArch/changes.xsd" xmlns:hints3="http://www.ics.uci.edu/pub/arch/xArch/hints3.xsd" xmlns:implementation="http://www.ics.uci.edu/pub/arch/xArch/implementation.xsd" xmlns:implementationext="http://www.ics.uci.edu/pub/arch/xArch/implementationext.xsd" xmlns:javaimplementation="http://www.ics.uci.edu/pub/arch/xArch/javaimplementation.xsd" xmlns:lookupimplementation="http://www.ics.uci.edu/pub/arch/xArch/lookupimplementation.xsd" xmlns:types="http://www.ics.uci.edu/pub/arch/xArch/types.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ics.uci.edu/pub/arch/xArch/implementationext.xsd http://www.ics.uci.edu/~zhengy/schema/Implementationext.xsd http://www.ics.uci.edu/pub/arch/xArch/changes.xsd http://www.ics.uci.edu/~zhengy/schema/changes.xsd http://www.ics.uci.edu/pub/arch/xArch/hints3.xsd http://www.isr.uci.edu/projects/xarchuci/ext/hints3.xsd http://www.ics.uci.edu/pub/arch/xArch/lookupimplementation.xsd http://www.isr.uci.edu/projects/xarchuci/ext/lookupimplementation.xsd http://www.ics.uci.edu/pub/arch/xArch/javaimplementation.xsd http://www.isr.uci.edu/projects/xarchuci/ext/javaimplementation.xsd http://www.ics.uci.edu/pub/arch/xArch/implementation.xsd http://www.isr.uci.edu/projects/xarchuci/ext/implementation.xsd http://www.ics.uci.edu/pub/arch/xArch/variants.xsd http://www.isr.uci.edu/projects/xarchuci/ext/variants.xsd http://www.ics.uci.edu/pub/arch/xArch/instance.xsd http://www.isr.uci.edu/projects/xarchuci/core/instance.xsd http://www.ics.uci.edu/pub/arch/xArch/statecharts.xsd http://www.ics.uci.edu/~zhengy/schema/statecharts.xsd http://www.ics.uci.edu/pub/arch/xArch/interactions.xsd http://www.ics.uci.edu/~zhengy/schema/interactions.xsd http://www.ics.uci.edu/pub/arch/xArch/types.xsd http://www.isr.uci.edu/projects/xarchuci/ext/types.xsd http://www.ics.uci.edu/pub/arch/xArch/changesets.xsd http://www.isr.uci.edu/projects/xarchuci/ext/changesets.xsd">
+    <types:archTypes xsi:type="types:ArchTypes">
+        <types:connectorType types:id="connectorTypeffffffe3-eaf0e48b-7e663991-d9ff0002" xsi:type="implementation:VariantConnectorTypeImpl">
+            <types:description xsi:type="instance:Description">EventPump Type</types:description>
+            <types:signature types:id="signatureffffffe3-eaf0e4ab-3520756c-d9ff0003" xsi:type="implementation:SignatureImpl">
+                <types:description xsi:type="instance:Description">in</types:description>
+                <types:direction xsi:type="instance:Direction">in</types:direction>
+                <implementation:implementation xsi:type="lookupimplementation:LookupImplementation">
+                    <lookupimplementation:name xsi:type="lookupimplementation:LookupName">in</lookupimplementation:name>
+                </implementation:implementation>
+            </types:signature>
+            <types:signature types:id="signatureffffffe3-eaf0e4b0-6e446d94-d9ff0004" xsi:type="implementation:SignatureImpl">
+                <types:description xsi:type="instance:Description">out</types:description>
+                <types:direction xsi:type="instance:Direction">out</types:direction>
+                <implementation:implementation xsi:type="lookupimplementation:LookupImplementation">
+                    <lookupimplementation:name xsi:type="lookupimplementation:LookupName">out</lookupimplementation:name>
+                </implementation:implementation>
+            </types:signature>
+            <implementation:implementation xsi:type="javaimplementation:JavaImplementation">
+                <javaimplementation:mainClass xsi:type="javaimplementation:JavaClassFile">
+                    <javaimplementation:javaClassName xsi:type="javaimplementation:JavaClassName">edu.uci.isr.myx.conn.EventPumpConnector</javaimplementation:javaClassName>
+                </javaimplementation:mainClass>
+            </implementation:implementation>
+        </types:connectorType>
+        <types:connectorType types:id="connectorTypeffffffe3-eaf0e4b9-8640780b-d9ff0005" xsi:type="implementation:VariantConnectorTypeImpl">
+            <types:description xsi:type="instance:Description">Synchronous Type</types:description>
+            <types:signature types:id="signatureffffffe3-eaf0e4bc-37fc9ce1-d9ff0006" xsi:type="implementation:SignatureImpl">
+                <types:description xsi:type="instance:Description">in</types:description>
+                <types:direction xsi:type="instance:Direction">in</types:direction>
+                <implementation:implementation xsi:type="lookupimplementation:LookupImplementation">
+                    <lookupimplementation:name xsi:type="lookupimplementation:LookupName">in</lookupimplementation:name>
+                </implementation:implementation>
+            </types:signature>
+            <types:signature types:id="signatureffffffe3-eaf0e4c0-729614e3-d9ff0007" xsi:type="implementation:SignatureImpl">
+                <types:description xsi:type="instance:Description">out</types:description>
+                <types:direction xsi:type="instance:Direction">out</types:direction>
+                <implementation:implementation xsi:type="lookupimplementation:LookupImplementation">
+                    <lookupimplementation:name xsi:type="lookupimplementation:LookupName">out</lookupimplementation:name>
+                </implementation:implementation>
+            </types:signature>
+            <implementation:implementation xsi:type="javaimplementation:JavaImplementation">
+                <javaimplementation:mainClass xsi:type="javaimplementation:JavaClassFile">
+                    <javaimplementation:javaClassName xsi:type="javaimplementation:JavaClassName">edu.uci.isr.myx.conn.SynchronousProxyConnector</javaimplementation:javaClassName>
+                </javaimplementation:mainClass>
+            </implementation:implementation>
+        </types:connectorType>
+        <types:connectorType types:id="connectorTypeffffffe3-eaf0e4c4-483b78c1-d9ff0008" xsi:type="implementation:VariantConnectorTypeImpl">
+            <types:description xsi:type="instance:Description">EventPump Type - Sync &amp; Async</types:description>
+            <types:signature types:id="signatureffffffe3-eaf0e4c6-89bc1219-d9ff0009" xsi:type="implementation:SignatureImpl">
+                <types:description xsi:type="instance:Description">in</types:description>
+                <types:direction xsi:type="instance:Direction">in</types:direction>
+                <implementation:implementation xsi:type="lookupimplementation:LookupImplementation">
+                    <lookupimplementation:name xsi:type="lookupimplementation:LookupName">in</lookupimplementation:name>
+                </implementation:implementation>
+            </types:signature>
+            <types:signature types:id="signatureffffffe3-eaf0e4c7-99c3c664-d9ff000a" xsi:type="implementation:SignatureImpl">
+                <types:description xsi:type="instance:Description">out</types:description>
+                <types:direction xsi:type="instance:Direction">out</types:direction>
+                <implementation:implementation xsi:type="lookupimplementation:LookupImplementation">
+                    <lookupimplementation:name xsi:type="lookupimplementation:LookupName">asynch</lookupimplementation:name>
+                </implementation:implementation>
+            </types:signature>
+            <types:signature types:id="signatureffffffe3-eaf0e4c9-048c9195-d9ff000b" xsi:type="implementation:SignatureImpl">
+                <types:description xsi:type="instance:Description">out</types:description>
+                <types:direction xsi:type="instance:Direction">out</types:direction>
+                <implementation:implementation xsi:type="lookupimplementation:LookupImplementation">
+                    <lookupimplementation:name xsi:type="lookupimplementation:LookupName">synch</lookupimplementation:name>
+                </implementation:implementation>
+            </types:signature>
+            <implementation:implementation xsi:type="javaimplementation:JavaImplementation">
+                <javaimplementation:mainClass xsi:type="javaimplementation:JavaClassFile">
+                    <javaimplementation:javaClassName xsi:type="javaimplementation:JavaClassName">edu.uci.isr.myx.conn.SynchAsynchPumpConnector</javaimplementation:javaClassName>
+                </javaimplementation:mainClass>
+            </implementation:implementation>
+        </types:connectorType>
+        <types:interfaceType types:id="interfaceTypeffffffe3-eaf41624-ff88ff72-d9ff000c" xsi:type="implementation:InterfaceTypeImpl">
+            <types:description xsi:type="instance:Description">clock type</types:description>
+            <implementation:implementation xsi:type="javaimplementation:JavaImplementation">
+                <javaimplementation:mainClass xsi:type="javaimplementation:JavaClassFile">
+                    <javaimplementation:javaClassName xsi:type="javaimplementation:JavaClassName">edu.umkc.smt.tetrisplugin.IClock</javaimplementation:javaClassName>
+                </javaimplementation:mainClass>
+            </implementation:implementation>
+        </types:interfaceType>
+    </types:archTypes>
+    <types:archStructure types:id="archStructureffffffe3-eaff0e01-6c0cc3fe-d9ff000e" xsi:type="types:ArchStructure">
+        <types:description xsi:type="instance:Description">Tetris</types:description>
+        <types:component xsi:type="implementationext:ComponentImpl" types:id="componentffffffe3-eaffda13-219138e6-d9ff0012">
+            <types:description xsi:type="instance:Description">Tetris</types:description>
+            <types:interface types:id="interfaceffffffe3-eb00f45a-07ee0037-d9ff0074" xsi:type="types:Interface">
+                <types:description xsi:type="instance:Description">[New Interface]</types:description>
+                <types:direction xsi:type="instance:Direction">in</types:direction>
+                <types:type xlink:href="#interfaceTypeffffffe3-eaf41624-ff88ff72-d9ff000c" xsi:type="instance:XMLLink" xlink:type="simple"/>
+            </types:interface>
+            <implementationext:implementation xsi:type="javaimplementation:JavaImplementation">
+                <javaimplementation:mainClass xsi:type="javaimplementation:JavaClassFile">
+                    <javaimplementation:javaClassName xsi:type="javaimplementation:JavaClassName">edu.umkc.smt.tetrisplugin.tetris.TetrisArch</javaimplementation:javaClassName>
+                </javaimplementation:mainClass>
+                <javaimplementation:auxClass xsi:type="javaimplementation:JavaClassFile">
+                    <javaimplementation:javaClassName xsi:type="javaimplementation:JavaClassName">edu.umkc.smt.tetrisplugin.tetris.TetrisImp</javaimplementation:javaClassName>
+                </javaimplementation:auxClass>
+            </implementationext:implementation>
+        </types:component>
+        <types:component xsi:type="implementationext:ComponentImpl" types:id="componentffffffe3-eb0035b2-01318314-d9ff0037">
+            <types:description xsi:type="instance:Description">Clock</types:description>
+            <types:interface types:id="interfaceffffffe3-eb00fd97-cf063858-d9ff0095" xsi:type="types:Interface">
+                <types:description xsi:type="instance:Description">[New Interface]</types:description>
+                <types:direction xsi:type="instance:Direction">out</types:direction>
+                <types:type xlink:href="#interfaceTypeffffffe3-eaf41624-ff88ff72-d9ff000c" xsi:type="instance:XMLLink" xlink:type="simple"/>
+            </types:interface>
+            <implementationext:implementation xsi:type="javaimplementation:JavaImplementation">
+                <javaimplementation:mainClass xsi:type="javaimplementation:JavaClassFile">
+                    <javaimplementation:javaClassName xsi:type="javaimplementation:JavaClassName">edu.umkc.smt.tetrisplugin.clock.ClockArch</javaimplementation:javaClassName>
+                </javaimplementation:mainClass>
+                <javaimplementation:auxClass xsi:type="javaimplementation:JavaClassFile">
+                    <javaimplementation:javaClassName xsi:type="javaimplementation:JavaClassName">edu.umkc.smt.tetrisplugin.clock.ClockImp</javaimplementation:javaClassName>
+                </javaimplementation:auxClass>
+            </implementationext:implementation>
+        </types:component>
+        <types:link types:id="linkffffffe3-eb017301-52860f85-d9ff00a1" xsi:type="types:Link">
+            <types:description xsi:type="instance:Description">[New Link]</types:description>
+            <types:point xsi:type="instance:Point">
+                <instance:anchorOnInterface xlink:href="#interfaceffffffe3-eb00f45a-07ee0037-d9ff0074" xsi:type="instance:XMLLink" xlink:type="simple"/>
+            </types:point>
+            <types:point xsi:type="instance:Point">
+                <instance:anchorOnInterface xlink:href="#interfaceffffffe3-eb00fd97-cf063858-d9ff0095" xsi:type="instance:XMLLink" xlink:type="simple"/>
+            </types:point>
+        </types:link>
+    </types:archStructure>
+    <hints3:renderingHints3 xsi:type="hints3:RenderingHints3">
+        <hints3:hintedElement hints3:maintainer="edu.uci.isr.archstudio4.comp.archipelago" xsi:type="hints3:HintBundle" hints3:version="4.0.0"/>
+        <hints3:hintedElement hints3:maintainer="edu.uci.isr.archstudio4.comp.archipelago" xsi:type="hints3:HintBundle" hints3:version="4.1.0">
+            <hints3:hintedElement xsi:type="hints3:HintedElement">
+                <hints3:target xlink:href="#archStructureffffffe3-eaff0e01-6c0cc3fe-d9ff000e" xsi:type="instance:XMLLink" xlink:type="simple"/>
+                <hints3:hintedElement xsi:type="hints3:HintedElement">
+                    <hints3:target xlink:href="#componentffffffe3-eaffda13-219138e6-d9ff0012" xsi:type="instance:XMLLink" xlink:type="simple"/>
+                    <hints3:property hints3:name="glass/boundingBox" xsi:type="hints3:Property">
+                        <hints3:value hints3:data="10708,10323,100,100" hints3:type="org.eclipse.swt.graphics.Rectangle" xsi:type="hints3:PropertyValue"/>
+                    </hints3:property>
+                </hints3:hintedElement>
+                <hints3:hintedElement xsi:type="hints3:HintedElement">
+                    <hints3:target xlink:href="#componentffffffe3-eb0035b2-01318314-d9ff0037" xsi:type="instance:XMLLink" xlink:type="simple"/>
+                    <hints3:property hints3:name="glass/boundingBox" xsi:type="hints3:Property">
+                        <hints3:value hints3:data="11175,10375,109,97" hints3:type="org.eclipse.swt.graphics.Rectangle" xsi:type="hints3:PropertyValue"/>
+                    </hints3:property>
+                    <hints3:property hints3:name="background/color" xsi:type="hints3:Property">
+                        <hints3:value hints3:data="197,203,255" hints3:type="org.eclipse.swt.graphics.RGB" xsi:type="hints3:PropertyValue"/>
+                    </hints3:property>
+                </hints3:hintedElement>
+                <hints3:hintedElement xsi:type="hints3:HintedElement">
+                    <hints3:target xlink:href="#interfaceffffffe3-eb00f45a-07ee0037-d9ff0074" xsi:type="instance:XMLLink" xlink:type="simple"/>
+                    <hints3:property hints3:name="glass/anchorPoint" xsi:type="hints3:Property">
+                        <hints3:value hints3:data="10808,10375" hints3:type="org.eclipse.swt.graphics.Point" xsi:type="hints3:PropertyValue"/>
+                    </hints3:property>
+                    <hints3:property hints3:name="glass/anchorPoint-StuckInfo" xsi:type="hints3:Property">
+                        <hints3:value hints3:data="{EDGE,{1.0,0.52}}" hints3:type="{[Ljava.lang.Object;,2,enum:edu.uci.isr.bna4.logics.coordinating.MaintainStickyPointLogic$StickyMode,{[F,2,java.lang.Float,java.lang.Float}}" xsi:type="hints3:PropertyValue"/>
+                    </hints3:property>
+                    <hints3:property hints3:name="background/color" xsi:type="hints3:Property">
+                        <hints3:value hints3:data="255,255,255" hints3:type="org.eclipse.swt.graphics.RGB" xsi:type="hints3:PropertyValue"/>
+                    </hints3:property>
+                </hints3:hintedElement>
+                <hints3:hintedElement xsi:type="hints3:HintedElement">
+                    <hints3:target xlink:href="#interfaceffffffe3-eb00fd97-cf063858-d9ff0095" xsi:type="instance:XMLLink" xlink:type="simple"/>
+                    <hints3:property hints3:name="glass/anchorPoint" xsi:type="hints3:Property">
+                        <hints3:value hints3:data="11175,10425" hints3:type="org.eclipse.swt.graphics.Point" xsi:type="hints3:PropertyValue"/>
+                    </hints3:property>
+                    <hints3:property hints3:name="glass/anchorPoint-StuckInfo" xsi:type="hints3:Property">
+                        <hints3:value hints3:data="{EDGE,{0.0,0.5154639}}" hints3:type="{[Ljava.lang.Object;,2,enum:edu.uci.isr.bna4.logics.coordinating.MaintainStickyPointLogic$StickyMode,{[F,2,java.lang.Float,java.lang.Float}}" xsi:type="hints3:PropertyValue"/>
+                    </hints3:property>
+                    <hints3:property hints3:name="background/color" xsi:type="hints3:Property">
+                        <hints3:value hints3:data="255,255,255" hints3:type="org.eclipse.swt.graphics.RGB" xsi:type="hints3:PropertyValue"/>
+                    </hints3:property>
+                </hints3:hintedElement>
+                <hints3:hintedElement xsi:type="hints3:HintedElement">
+                    <hints3:target xlink:href="#linkffffffe3-eb017301-52860f85-d9ff00a1" xsi:type="instance:XMLLink" xlink:type="simple"/>
+                    <hints3:property hints3:name="glass/midpoints" xsi:type="hints3:Property">
+                        <hints3:value hints3:data="{}" hints3:type="{[Lorg.eclipse.swt.graphics.Point;,0}" xsi:type="hints3:PropertyValue"/>
+                    </hints3:property>
+                    <hints3:property hints3:name="glass/endpoint1" xsi:type="hints3:Property">
+                        <hints3:value hints3:data="10813,10376" hints3:type="org.eclipse.swt.graphics.Point" xsi:type="hints3:PropertyValue"/>
+                    </hints3:property>
+                    <hints3:property hints3:name="glass/endpoint2" xsi:type="hints3:Property">
+                        <hints3:value hints3:data="11170,10424" hints3:type="org.eclipse.swt.graphics.Point" xsi:type="hints3:PropertyValue"/>
+                    </hints3:property>
+                    <hints3:property hints3:name="glass/endpoint2-StuckInfo" xsi:type="hints3:Property">
+                        <hints3:value hints3:data="{EDGE_FROM_CENTER}" hints3:type="{[Ljava.lang.Object;,1,enum:edu.uci.isr.bna4.logics.coordinating.MaintainStickyPointLogic$StickyMode}" xsi:type="hints3:PropertyValue"/>
+                    </hints3:property>
+                    <hints3:property hints3:name="glass/endpoint1-StuckInfo" xsi:type="hints3:Property">
+                        <hints3:value hints3:data="{EDGE_FROM_CENTER}" hints3:type="{[Ljava.lang.Object;,1,enum:edu.uci.isr.bna4.logics.coordinating.MaintainStickyPointLogic$StickyMode}" xsi:type="hints3:PropertyValue"/>
+                    </hints3:property>
+                </hints3:hintedElement>
+            </hints3:hintedElement>
+        </hints3:hintedElement>
+    </hints3:renderingHints3>
+    <changes:archChange changes:id="archChangeffffffe3-eaff81a5-3f3220e4-d9ff0010" xsi:type="changes:ArchChange">
+        <changes:description xsi:type="instance:Description">Architecture Change Model</changes:description>
+        <changes:changes changes:id="changesffffffe3-eaffda1f-f5afec8e-d9ff0013" changes:status="mapped" xsi:type="changes:Changes">
+            <changes:description xsi:type="instance:Description">2015-03-05 11:33</changes:description>
+            <changes:componentChange changes:id="componentChangeffffffe3-eaffda2e-3328d1cc-d9ff0015" xsi:type="changes:ComponentChange" changes:type="add">
+                <changes:description xsi:type="instance:Description">New Component</changes:description>
+                <changes:component xlink:href="#componentffffffe3-eaffda13-219138e6-d9ff0012" xsi:type="instance:XMLLink" xlink:type="simple"/>
+            </changes:componentChange>
+            <changes:componentChange changes:id="componentChangeffffffe3-eb0035b4-5ab33aeb-d9ff0039" xsi:type="changes:ComponentChange" changes:type="add">
+                <changes:description xsi:type="instance:Description">New Component</changes:description>
+                <changes:component xlink:href="#componentffffffe3-eb0035b2-01318314-d9ff0037" xsi:type="instance:XMLLink" xlink:type="simple"/>
+            </changes:componentChange>
+            <changes:componentChange changes:id="componentChangeffffffe3-eb00f45e-82ad3881-d9ff0075" xsi:type="changes:ComponentChange" changes:type="update">
+                <changes:description xsi:type="instance:Description">New interface</changes:description>
+                <changes:component xlink:href="#componentffffffe3-eaffda13-219138e6-d9ff0012" xsi:type="instance:XMLLink" xlink:type="simple"/>
+                <changes:interfaceChange changes:id="interfaceChangeffffffe3-eb00f46c-a58bac0c-d9ff0079" xsi:type="changes:InterfaceChange" changes:type="add">
+                    <changes:interface xlink:href="#interfaceffffffe3-eb00f45a-07ee0037-d9ff0074" xsi:type="instance:XMLLink" xlink:type="simple"/>
+                </changes:interfaceChange>
+            </changes:componentChange>
+            <changes:componentChange changes:id="componentChangeffffffe3-eb00fd99-a82c3746-d9ff0096" xsi:type="changes:ComponentChange" changes:type="update">
+                <changes:description xsi:type="instance:Description">New interface</changes:description>
+                <changes:component xlink:href="#componentffffffe3-eb0035b2-01318314-d9ff0037" xsi:type="instance:XMLLink" xlink:type="simple"/>
+                <changes:interfaceChange changes:id="interfaceChangeffffffe3-eb00fd9b-0eac3dc6-d9ff0097" xsi:type="changes:InterfaceChange" changes:type="add">
+                    <changes:interface xlink:href="#interfaceffffffe3-eb00fd97-cf063858-d9ff0095" xsi:type="instance:XMLLink" xlink:type="simple"/>
+                </changes:interfaceChange>
+            </changes:componentChange>
+            <changes:linkChange changes:id="linkChangeffffffe3-eb017306-9e76d945-d9ff00a2" xsi:type="changes:LinkChange" changes:type="add">
+                <changes:description xsi:type="instance:Description">New Link</changes:description>
+                <changes:link xlink:href="#linkffffffe3-eb017301-52860f85-d9ff00a1" xsi:type="instance:XMLLink" xlink:type="simple"/>
+            </changes:linkChange>
+        </changes:changes>
+    </changes:archChange>
+</instance:xArch>
