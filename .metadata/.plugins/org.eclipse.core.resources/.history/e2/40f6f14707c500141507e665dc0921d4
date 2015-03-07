@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Tetris1
+Bundle-SymbolicName: edu.umkc.smt.tetris1
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: edu.umkc.smt.tetris1.Activator
+Require-Bundle: org.eclipse.core.runtime
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy

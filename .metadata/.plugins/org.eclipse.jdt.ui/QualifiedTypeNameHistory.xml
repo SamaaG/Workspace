@@ -3,4 +3,6 @@
 <fullyQualifiedTypeName name="edu.umkc.tetrisama.TileType"/>
 <fullyQualifiedTypeName name="edu.umkc.tetrisama.ITetris"/>
 <fullyQualifiedTypeName name="edu.umkc.tetrisama.major.ITetrisImp"/>
+<fullyQualifiedTypeName name="edu.umkc.smt.tetrisplugin.tetris.TetrisArch"/>
+<fullyQualifiedTypeName name="edu.umkc.smt.tetrisplugin.IClock"/>
 </qualifiedTypeNameHistroy>

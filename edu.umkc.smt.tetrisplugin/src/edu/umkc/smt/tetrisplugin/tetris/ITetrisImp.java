@@ -20,6 +20,7 @@ public interface ITetrisImp
 	public void begin();
 	public void end();
 	public void destroy();
+	public void startGame();
 
 	/*
   	  Implementation primitives required by the architecture

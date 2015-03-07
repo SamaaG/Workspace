@@ -1,0 +1,148 @@
+package edu.umkc.smt.tetrisplugin.tetris;
+
+import java.util.Random;
+
+import javax.swing.JFrame;
+
+import edu.umkc.smt.tetrisplugin.BoardPanel;
+import edu.umkc.smt.tetrisplugin.SidePanel;
+import edu.umkc.smt.tetrisplugin.Tetris;
+import edu.umkc.smt.tetrisplugin.TileType;
+
+
+
+public class TetrisImp extends JFrame implements ITetrisImp
+{
+	private TetrisArch _arch;
+
+	/**
+	 * The Serial Version UID.
+	 */
+	private static final long serialVersionUID = -4722429764792514382L;
+
+	/**
+	 * The number of milliseconds per frame.
+	 */
+	private static final long FRAME_TIME = 1000L / 50L;
+	
+	/**
+	 * The number of pieces that exist.
+	 */
+	private static final int TYPE_COUNT = TileType.values().length;
+		
+	/**
+	 * The BoardPanel instance.
+	 */
+	private BoardPanel board;
+	
+	/**
+	 * The SidePanel instance.
+	 */
+	private SidePanel side;
+	
+	/**
+	 * Whether or not the game is paused.
+	 */
+	private boolean isPaused;
+	
+	/**
+	 * Whether or not we've played a game yet. This is set to true
+	 * initially and then set to false when the game starts.
+	 */
+	private boolean isNewGame;
+	
+	/**
+	 * Whether or not the game is over.
+	 */
+	private boolean isGameOver;
+	
+	/**
+	 * The current level we're on.
+	 */
+	private int level;
+	
+	/**
+	 * The current score.
+	 */
+	private int score;
+	
+	/**
+	 * The random number generator. This is used to
+	 * spit out pieces randomly.
+	 */
+	private Random random;
+	
+	/**
+	 * The clock that handles the update logic.
+	 */
+	private Clock logicTimer;
+				
+	/**
+	 * The current type of tile.
+	 */
+	private TileType currentType;
+	
+	/**
+	 * The next type of tile.
+	 */
+	private TileType nextType;
+		
+	/**
+	 * The current column of our tile.
+	 */
+	private int currentCol;
+	
+	/**
+	 * The current row of our tile.
+	 */
+	private int currentRow;
+	
+	/**
+	 * The current rotation of our tile.
+	 */
+	private int currentRotation;
+		
+	/**
+	 * Ensures that a certain amount of time passes after a piece is
+	 * spawned before we can drop it.
+	 */
+	private int dropCooldown;
+	
+	/**
+	 * The speed of the game.
+	 */
+	private float gameSpeed;
+		
+    public TetrisImp (){
+    }
+
+	public void setArch(TetrisArch arch){
+		_arch = arch;
+	}
+	public TetrisArch getArch(){
+		return _arch;
+	}
+
+	/*
+  	  Myx Lifecycle Methods: these methods are called automatically by the framework
+  	  as the bricks are created, attached, detached, and destroyed respectively.
+	*/	
+	public void init(){
+	    //TODO Auto-generated method stub
+	}
+	public void begin(){
+		//TODO Auto-generated method stub
+		Tetris tetris = new Tetris();
+		tetris.startGame();
+	}
+	public void end(){
+		//TODO Auto-generated method stub
+	}
+	public void destroy(){
+		//TODO Auto-generated method stub
+	}
+
+	/*
+  	  Implementation primitives required by the architecture
+	*/
+}
