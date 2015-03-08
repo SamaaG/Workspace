@@ -1,0 +1,10 @@
+package edu.umkc.smt.tetris1;
+
+public class ITetris {
+
+	public boolean isPaused() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

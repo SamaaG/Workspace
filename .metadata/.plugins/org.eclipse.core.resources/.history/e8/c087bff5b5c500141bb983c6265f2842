@@ -1,0 +1,5 @@
+package edu.umkc.smt.tetris1;
+
+public interface ITetris {
+
+}

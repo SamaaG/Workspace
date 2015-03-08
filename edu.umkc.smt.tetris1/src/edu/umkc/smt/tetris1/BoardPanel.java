@@ -7,6 +7,8 @@ import java.awt.Graphics;
 
 import javax.swing.JPanel;
 
+import edu.umkc.smt.tetris1.tetris.TetrisImp;
+
 /**
  * The {@code BoardPanel} class is responsible for displaying the game grid and
  * handling things related to the game board.
@@ -100,7 +102,7 @@ public class BoardPanel extends JPanel {
 	/**
 	 * The Tetris instance.
 	 */
-	private Tetris tetris;
+	private TetrisImp tetris;
 	
 	/**
 	 * The tiles that make up the board.
@@ -109,10 +111,10 @@ public class BoardPanel extends JPanel {
 		
 	/**
 	 * Crates a new GameBoard instance.
-	 * @param tetris The Tetris instance to use.
+	 * @param tetrisImp The Tetris instance to use.
 	 */
-	public BoardPanel(Tetris tetris) {
-		this.tetris = tetris;
+	public BoardPanel(TetrisImp tetrisImp) {
+		this.tetris = tetrisImp;
 		this.tiles = new TileType[ROW_COUNT][COL_COUNT];
 		
 		setPreferredSize(new Dimension(PANEL_WIDTH, PANEL_HEIGHT));

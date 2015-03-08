@@ -7,6 +7,8 @@ import java.awt.Graphics;
 
 import javax.swing.JPanel;
 
+import edu.umkc.smt.tetris1.tetris.TetrisImp;
+
 /**
  * The {@code SidePanel} class is responsible for displaying various information
  * on the game such as the next piece, the score and current level, and controls.
@@ -94,13 +96,13 @@ public class SidePanel extends JPanel {
 	/**
 	 * The Tetris instance.
 	 */
-	private Tetris tetris;
+	private TetrisImp tetris;
 	
 	/**
 	 * Creates a new SidePanel and sets it's display properties.
 	 * @param tetris The Tetris instance to use.
 	 */
-	public SidePanel(Tetris tetris) {
+	public SidePanel(TetrisImp tetris) {
 		this.tetris = tetris;
 		
 		setPreferredSize(new Dimension(200, BoardPanel.PANEL_HEIGHT));
