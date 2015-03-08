@@ -5,4 +5,5 @@
 <fullyQualifiedTypeName name="edu.umkc.tetrisama.major.ITetrisImp"/>
 <fullyQualifiedTypeName name="edu.umkc.smt.tetrisplugin.tetris.TetrisArch"/>
 <fullyQualifiedTypeName name="edu.umkc.smt.tetrisplugin.IClock"/>
+<fullyQualifiedTypeName name="javax.swing.JFrame"/>
 </qualifiedTypeNameHistroy>
