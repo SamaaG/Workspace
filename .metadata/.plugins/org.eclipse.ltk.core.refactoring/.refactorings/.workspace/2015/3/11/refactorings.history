@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;edu.umkc.smt.tetris1/src/edu/umkc/smt/tetris1/Tetris.java&apos;" deleteContents="false" description="Delete resource &apos;edu.umkc.smt.tetris1/src/edu/umkc/smt/tetris1/Tetris.java&apos;" element1="/edu.umkc.smt.tetris1/src/edu/umkc/smt/tetris1/Tetris.java" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1425827135515"/>
+</session>
