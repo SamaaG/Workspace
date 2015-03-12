@@ -3,10 +3,15 @@ package edu.umkc.smt.tetris1.tetris;
 
 import edu.uci.isr.myx.fw.AbstractMyxSimpleBrick;
 import edu.uci.isr.myx.fw.IMyxName;
+import edu.uci.isr.myx.fw.MyxUtils;
+
+import edu.umkc.smt.tetris1.IClock;
 
 public class TetrisArch extends AbstractMyxSimpleBrick
 {
+    public static final IMyxName msg_IClock = MyxUtils.createName("edu.umkc.smt.tetris1.IClock");
 
+    public IClock OUT_IClock;
 
 	private ITetrisImp _imp;
 
@@ -33,6 +38,11 @@ public class TetrisArch extends AbstractMyxSimpleBrick
     }
     
     public void begin(){
+        OUT_IClock = (IClock) MyxUtils.getFirstRequiredServiceObject(this,msg_IClock);
+        if (OUT_IClock == null){
+ 			System.err.println("Error: Interface edu.umkc.smt.tetris1.IClock returned null");
+			return;       
+        }
         _imp.begin();
     }
     

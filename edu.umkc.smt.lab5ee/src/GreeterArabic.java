@@ -1,0 +1,16 @@
+import edu.umkc.smt.lab5.IGreeter;
+
+
+public class GreeterArabic implements IGreeter {
+
+	public GreeterArabic() {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public String sayHello() {
+		// TODO Auto-generated method stub
+		return "!السلام عليكم";
+	}
+
+}

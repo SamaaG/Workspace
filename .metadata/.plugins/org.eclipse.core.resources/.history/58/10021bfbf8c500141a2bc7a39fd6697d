@@ -1,0 +1,5 @@
+package edu.umkc.tetris;
+
+public interface IBoard {
+	public boolean isValidAndEmpty(TileType type, int x, int y, int rotation);
+}

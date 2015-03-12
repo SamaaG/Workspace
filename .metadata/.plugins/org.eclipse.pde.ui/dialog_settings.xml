@@ -6,7 +6,16 @@
 	<item value="false" key="apiAnalysis"/>
 	<item value="false" key="rcpPlugin"/>
 	<item value="false" key="osgiProject"/>
+	<list key="providers">
+		<item value="Samaa"/>
+	</list>
 	<section name="PDEFormActionManager">
+	</section>
+	<section name="JavaAttributeWizard">
+		<section name="NewClassWizardPage">
+			<item value="true" key="create_constructor"/>
+			<item value="true" key="create_unimplemented"/>
+		</section>
 	</section>
 	<section name="org.eclipse.pde.ui.dialogs.PluginSelectionDialog">
 		<item value="true" key="ShowStatusLine"/>

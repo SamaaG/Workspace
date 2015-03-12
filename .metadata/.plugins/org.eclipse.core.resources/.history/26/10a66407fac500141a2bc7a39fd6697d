@@ -1,0 +1,57 @@
+package edu.umkc.tetris.board;
+
+import edu.umkc.tetris.TileType;
+
+
+
+public class BoardImp implements IBoardPanelImp
+{
+	private BoardArch _arch;
+
+    public BoardImp (){
+    }
+
+	public void setArch(BoardArch arch){
+		_arch = arch;
+	}
+	public BoardArch getArch(){
+		return _arch;
+	}
+
+	/*
+  	  Myx Lifecycle Methods: these methods are called automatically by the framework
+  	  as the bricks are created, attached, detached, and destroyed respectively.
+	*/	
+	public void init(){
+	    //TODO Auto-generated method stub
+	}
+	public void begin(){
+		//TODO Auto-generated method stub
+	}
+	public void end(){
+		//TODO Auto-generated method stub
+	}
+	public void destroy(){
+		//TODO Auto-generated method stub
+	}
+
+	/*
+  	  Implementation primitives required by the architecture
+	*/
+  
+    
+    public boolean isValidAndEmpty (TileType type,int x,int y,int rotation)   {
+		//TODO Auto-generated method stub
+		return false;
+    }
+    public int checkLines ()   {
+		//TODO Auto-generated method stub
+		return 0;
+    }
+    public void clear ()   {
+		//TODO Auto-generated method stub
+		
+    }
+
+	
+}

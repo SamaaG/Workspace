@@ -1,0 +1,40 @@
+package edu.umkc.tetris;
+
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Font;
+import java.awt.Graphics;
+
+import javax.swing.JPanel;
+
+import edu.umkc.tetris.board.BoardImp;
+import edu.umkc.tetris.tetris.TetrisImp;
+
+/**
+ * The {@code SidePanel} class is responsible for displaying various information
+ * on the game such as the next piece, the score and current level, and controls.
+ * @author Brendan Jones
+ *
+ */
+public class SidePanel  {
+	
+	
+	
+	/**
+	 * Creates a new SidePanel and sets it's display properties.
+	 * @param tetrisImp The Tetris instance to use.
+	 */
+	
+	
+	
+	
+	/**
+	 * Draws a tile onto the preview window.
+	 * @param type The type of tile to draw.
+	 * @param x The x coordinate of the tile.
+	 * @param y The y coordinate of the tile.
+	 * @param g The graphics object.
+	 */
+	
+	
+}

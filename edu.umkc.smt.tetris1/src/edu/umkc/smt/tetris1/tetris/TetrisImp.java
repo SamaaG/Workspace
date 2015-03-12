@@ -77,7 +77,7 @@ public class TetrisImp extends JFrame implements ITetrisImp
 	/**
 	 * The clock that handles the update logic.
 	 */
-	private Clock logicTimer;
+	private IClock logicTimer;
 				
 	/**
 	 * The current type of tile.

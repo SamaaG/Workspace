@@ -6,4 +6,8 @@
 <fullyQualifiedTypeName name="edu.umkc.smt.tetrisplugin.tetris.TetrisArch"/>
 <fullyQualifiedTypeName name="edu.umkc.smt.tetrisplugin.IClock"/>
 <fullyQualifiedTypeName name="javax.swing.JFrame"/>
+<fullyQualifiedTypeName name="edu.umkc.tetris.IBoard"/>
+<fullyQualifiedTypeName name="edu.umkc.tetris.board.BoardImp"/>
+<fullyQualifiedTypeName name="edu.umkc.tetris.side.SideImp"/>
+<fullyQualifiedTypeName name="edu.umkc.tetris.TileType"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,17 @@
+package edu.umkc.smt.lab5ee;
+
+import edu.umkc.smt.lab5.IGreeter;
+
+public class GreeterEnglish implements IGreeter {
+
+	public GreeterEnglish() {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public String sayHello() {
+		// TODO Auto-generated method stub
+		return "Hello!";
+	}
+
+}

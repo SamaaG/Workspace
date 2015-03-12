@@ -1,0 +1,5 @@
+package edu.umkc.smt.tetris1.tetris;
+
+public interface IClock {
+
+}

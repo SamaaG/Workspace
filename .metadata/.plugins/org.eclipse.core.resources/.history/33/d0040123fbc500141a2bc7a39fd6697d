@@ -1,0 +1,119 @@
+package edu.umkc.tetris;
+
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Font;
+import java.awt.Graphics;
+
+import javax.swing.JPanel;
+
+import edu.umkc.tetris.tetris.TetrisImp;
+
+/**
+ * The {@code BoardPanel} class is responsible for displaying the game grid and
+ * handling things related to the game board.
+ * @author Brendan Jones
+ *
+ */
+public class BoardPanel  {
+
+		
+	/**
+	 * Crates a new GameBoard instance.
+	 * @param tetrisImp The Tetris instance to use.
+	 */
+	
+	
+	/**
+	 * Resets the board and clears away any tiles.
+	 */
+	public void clear() {
+		/*
+		 * Loop through every tile index and set it's value
+		 * to null to clear the board.
+		 */
+		
+	}
+	
+	/**
+	 * Determines whether or not a piece can be placed at the coordinates.
+	 * @param type THe type of piece to use.
+	 * @param x The x coordinate of the piece.
+	 * @param y The y coordinate of the piece.
+	 * @param rotation The rotation of the piece.
+	 * @return Whether or not the position is valid.
+	 */
+	public boolean isValidAndEmpty(TileType type, int x, int y, int rotation) {
+		
+	}
+	
+	/**
+	 * Adds a piece to the game board. Note: Doesn't check for existing pieces,
+	 * and will overwrite them if they exist.
+	 * @param type The type of piece to place.
+	 * @param x The x coordinate of the piece.
+	 * @param y The y coordinate of the piece.
+	 * @param rotation The rotation of the piece.
+	 */
+	
+	
+	/**
+	 * Checks the board to see if any lines have been cleared, and
+	 * removes them from the game.
+	 * @return The number of lines that were cleared.
+	 */
+	public int checkLines() {
+		
+	}
+			
+	/**
+	 * Checks whether or not {@code row} is full.
+	 * @param line The row to check.
+	 * @return Whether or not this row is full.
+	 */
+	
+	
+	
+	/**
+	 * Checks to see if the tile is already occupied.
+	 * @param x The x coordinate to check.
+	 * @param y The y coordinate to check.
+	 * @return Whether or not the tile is occupied.
+	 */
+	
+	
+	/**
+	 * Sets a tile located at the desired column and row.
+	 * @param x The column.
+	 * @param y The row.
+	 * @param type The value to set to the tile to.
+	 */
+	
+		
+	/**
+	 * Gets a tile by it's column and row.
+	 * @param x The column.
+	 * @param y The row.
+	 * @return The tile.
+	 */
+	
+	/**
+	 * Draws a tile onto the board.
+	 * @param type The type of tile to draw.
+	 * @param x The column.
+	 * @param y The row.
+	 * @param g The graphics object.
+	 */
+	
+	
+	/**
+	 * Draws a tile onto the board.
+	 * @param base The base color of tile.
+	 * @param light The light color of the tile.
+	 * @param dark The dark color of the tile.
+	 * @param x The column.
+	 * @param y The row.
+	 * @param g The graphics object.
+	 */
+	
+}

@@ -1,0 +1,77 @@
+package edu.umkc.tetris.board;
+
+
+import javax.swing.JPanel;
+
+import edu.uci.isr.myx.fw.IMyxName;
+import edu.uci.isr.myx.fw.MyxUtils;
+import edu.umkc.tetris.IBoard;
+import edu.umkc.tetris.ITetris;
+import edu.umkc.tetris.TileType;
+
+public class BoardArch extends JPanel implements IBoard
+{
+    public static final IMyxName msg_IBoard = MyxUtils.createName("edu.umkc.tetris.IBoard");
+    public static final IMyxName msg_ITetris = MyxUtils.createName("edu.umkc.tetris.ITetris");
+
+    public ITetris OUT_ITetris;
+
+	private IBoardPanelImp _imp;
+
+    public BoardArch (){
+		_imp = getImplementation();
+		if (_imp != null){
+			_imp.setArch(this);
+		} else {
+			System.exit(1);
+		}
+	}
+    
+    protected IBoardPanelImp getImplementation(){
+        try{
+			return new BoardImp();    
+        } catch (Exception e){
+            System.err.println(e.getMessage());
+            return null;
+        }
+    }
+
+    public void init(){
+        _imp.init();
+    }
+    
+    public void begin(){
+        OUT_ITetris = (ITetris) MyxUtils.getFirstRequiredServiceObject(this,msg_ITetris);
+        if (OUT_ITetris == null){
+ 			System.err.println("Error: Interface edu.umkc.tetris.ITetris returned null");
+			return;       
+        }
+        _imp.begin();
+    }
+    
+    public void end(){
+        _imp.end();
+    }
+    
+    public void destroy(){
+        _imp.destroy();
+    }
+    
+	public Object getServiceObject(IMyxName arg0) {
+		if (arg0.equals(msg_IBoard)){
+			return this;
+		}        
+		return null;
+	}
+  
+    
+    public boolean isValidAndEmpty (TileType type,int x,int y,int rotation)   {
+		return _imp.isValidAndEmpty(type,x,y,rotation);
+    }    
+    public int checkLines ()   {
+		return _imp.checkLines();
+    }    
+    public void clear ()   {
+		_imp.clear();
+    }    
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="edu.umkc.smt.lab5.helloworld">
+      <friend
+            class="edu.umkc.smt.lab5ee.GreeterEnglish">
+      </friend>
+      <friend
+            class="GreeterArabic">
+      </friend>
+   </extension>
+
+</plugin>

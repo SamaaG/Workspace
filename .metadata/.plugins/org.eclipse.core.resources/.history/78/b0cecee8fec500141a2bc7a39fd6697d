@@ -1,0 +1,17 @@
+package edu.umkc.tetris;
+
+import java.awt.Component;
+
+import javax.swing.JPanel;
+
+public interface IBoard extends JPanel {
+	public boolean isValidAndEmpty(TileType type, int x, int y, int rotation);
+	
+	public int checkLines();
+	
+	public void clear();
+	
+	public void addPiece(TileType type, int x, int y, int rotation);
+
+	
+}
