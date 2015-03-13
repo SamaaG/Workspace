@@ -560,7 +560,8 @@ public class Tetris extends JFrame {
 	 * @param args Unused.
 	 */
 	public static void main(String[] args) {
-		
+		Tetris tetris = new Tetris();
+		tetris.startGame();
 	}
 
 }

@@ -90,12 +90,12 @@ public class BoardPanel extends JPanel {
 	/**
 	 * The larger font to display.
 	 */
-	private static final Font LARGE_FONT = new Font("Tahoma", Font.BOLD, 30);
+	private static final Font LARGE_FONT = new Font("Tahoma", Font.BOLD, 16);
 
 	/**
 	 * The smaller font to display.
 	 */
-	private static final Font SMALL_FONT = new Font("Tahoma", Font.BOLD, 20);
+	private static final Font SMALL_FONT = new Font("Tahoma", Font.BOLD, 12);
 	
 	/**
 	 * The Tetris instance.
